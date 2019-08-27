@@ -1,0 +1,42 @@
+﻿@{
+    Layout = "~/Views/Shared/_GeneralTemplate.cshtml";
+}
+@model ArtPortfolioASPEdition.Models.CommissionDetails;
+    <head>
+        <title>Commission Request</title>
+    </head>
+
+<h2>Request a Commission</h2>
+
+<div>
+    If you want to commission me for a drawing, please fill out this form. <br />
+    For the time being, I will not charge money for commissions as I am still learning how to draw. However, If you wish do make a donation, send me an email after making
+    a request to arrange a donation. 
+</div>
+
+<br />
+<h4>Terms and Conditions</h4>
+<li>I have the right to decline any commission request for any reason. </li>
+<li>I will not draw any NSFW content (except for limited amounts for satirical drawings only and not guaranteed to be accepted). </li>
+<li>Otherwise, I am open to draw almost anything else. Just let me know the details and I will ultimately decide whether I draw something on a case by case basis</li>
+
+
+<div style="max-width: 500px; height: 400px">
+    <form asp-action="Page2" method="post">
+        <label asp-for="email">Email: </label> <br /> <input asp-for="email" type="email" required />
+        <br />
+
+        <label asp-for="description">Description: </label> <br />
+        <textarea asp-for="description" class="form-control" rows="3" cols="9" style="resize:none; max-width: 500px" id="comment" required></textarea>
+
+        <br />
+
+        <div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </div>
+        <div>
+            By clicking submit, you agree to the terms and conditions stated above.
+        </div>
+
+    </form>
+</div>

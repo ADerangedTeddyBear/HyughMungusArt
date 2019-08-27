@@ -1,0 +1,23 @@
+﻿
+@{
+    Layout = "~/Views/Shared/_GeneralTemplate.cshtml";
+}
+@model ArtPortfolioASPEdition.Models.ContactDetails;
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Message Received</title>
+</head>
+<body>
+    <h2 style="text-align:center">Thank you for your message</h2>
+    <div style="text-align:center">
+        Your message has been sent. I will read your message and get back to you as soon as possible. Click the button below to return to the home page.
+        <form action="Index" method="post" style="margin-top:10px">
+            <button type="submit" class="btn btn-primary">Return Home</button>
+        </form>
+    </div>
+</body>
+</html>

@@ -1,0 +1,23 @@
+﻿
+@{
+    Layout = "~/Views/Shared/_GeneralTemplate.cshtml";
+}
+@model ArtPortfolioASPEdition.Models.CommissionDetails;
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Request Sent</title>
+</head>
+<body>
+    <h2 style="text-align:center">Thank you for your request</h2>
+    <div style="text-align:center">
+        Your commission requiest has been sent. I will look over it and see what I can do. Press the button below to return to the home page.
+        <form action="Index" method="post" style="margin-top:10px">
+            <button type="submit" class="btn btn-primary">Return Home</button>
+        </form>
+    </div> 
+</body>
+</html>
