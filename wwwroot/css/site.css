@@ -1,0 +1,12 @@
+﻿header img {
+    width: 150px;
+    height: 140px;
+}
+
+img {
+    max-width: 80%;
+    max-height: 80%;
+    border-color: indianred;
+    border-style: solid;
+    border-radius: 5px;
+}
