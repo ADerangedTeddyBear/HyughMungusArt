@@ -25,7 +25,7 @@ namespace ArtPortfolioASPEdition.DAL
             conn.Open();
 
 
-            //Command for inserting data into dbo.Person table
+            //SQL Query for inserting commissions into database
             string query = "INSERT INTO [dbo].[CommissionsList]([email],[description])" +
                 " VALUES( @email, @description)";
             SqlCommand cmd = new SqlCommand(query, conn);

@@ -25,7 +25,7 @@ namespace ArtPortfolioASPEdition.DAL
             conn.Open();
 
 
-            //Command for inserting data into dbo.Person table
+            //SQL query for adding messages to database
             string query = "INSERT INTO [dbo].[messages]([email],[name],[message])" +
                 " VALUES( @email, @name, @description)";
             SqlCommand cmd = new SqlCommand(query, conn);
