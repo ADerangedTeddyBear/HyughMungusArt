@@ -32,11 +32,6 @@ namespace ArtPortfolioASPEdition.Controllers
             return View();
         }
 
-        public IActionResult PersonalDetails()
-        {
-            return View();
-        }
-
         [HttpPost]
         public IActionResult Page2(CommissionDetails commission)
         {
@@ -72,7 +67,7 @@ namespace ArtPortfolioASPEdition.Controllers
         //General Message to me
         public void ReceiveMessage(ContactDetails contactMessage)
         {
-            string to = "fakemail@fakemail.com"; //Email Censored
+            string to = "jokernaik69@gmail.com";
             string body = $"{contactMessage.message}";
 
             string subject = $"Message from {contactMessage.name} at {contactMessage.email}";
@@ -122,7 +117,7 @@ namespace ArtPortfolioASPEdition.Controllers
         //Commission Message to me
         public void SendEmail(CommissionDetails commission)
         {
-            string to = "fakemail@fakemail.com"; //Email censored
+            string to = "jokernaik69@gmail.com";
             string body = $"{commission.description} \n. Send results to {commission.email} upon completion. ";
 
             string subject = $"Commission from {commission.email}";
@@ -143,7 +138,7 @@ namespace ArtPortfolioASPEdition.Controllers
             smtp.Send(mail);
         }
 
-        //General Message to requester
+        //Email sent to requester so that the requester can verify that they have sent a request. 
         public void UserConfirmationMail(CommissionDetails commission)
         {
             string to = commission.email;
